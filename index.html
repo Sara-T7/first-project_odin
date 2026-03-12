@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selene's CSS & HTML Showcase</title>
+
+    <!-- External Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Internal CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            background: linear-gradient(to right, #ffe0e0, #e0f7ff);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .topic-img {
+            display: block;
+            margin: 10px auto;
+            max-width: 80%;
+            border-radius: 10px;
+        }
+
+        .css-box {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .red { background-color: red; }
+        .green { background-color: green; }
+        .yellow { background-color: yellow; }
+
+        /* CSS animation example */
+        .animate-box {
+            width: 100px;
+            height: 100px;
+            background-color: #ff69b4;
+            margin: 20px auto;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-30px); }
+        }
+
+        /* Media query example */
+        @media screen and (max-width: 768px) {
+            .section {
+                font-size: 14px;
+                padding: 10px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Selene's CSS & HTML Learning Guide</h1>
+
+    <!-- Introduction -->
+    <div class="section">
+        <h2>Introduction</h2>
+        <p>CSS (Cascading Style Sheets) is used to style HTML elements. It controls layout, color, fonts, and more.</p>
+        <img class="topic-img" src="https://cdn.pixabay.com/photo/2017/06/13/22/01/code-2405215_960_720.png" alt="CSS Introduction">
+    </div>
+
+    <!-- CSS Selectors -->
+    <div class="section">
+        <h2>CSS Selectors</h2>
+        <p>Selectors allow you to target HTML elements to apply styles.</p>
+        <ul>
+            <li><b>Element selector:</b> h1 { color: blue; }</li>
+            <li><b>ID selector:</b> #header { font-size: 24px; }</li>
+            <li><b>Class selector:</b> .button { background-color: green; }</li>
+        </ul>
+        <img class="topic-img" src="https://cdn.pixabay.com/photo/2016/12/06/09/31/css-1883834_960_720.png" alt="CSS Selectors">
+    </div>
+
+    <!-- CSS Properties -->
+    <div class="section">
+        <h2>CSS Properties</h2>
+        <p>Common properties include:</p>
+        <ul>
+            <li>color, background-color</li>
+            <li>font-size, font-family</li>
+            <li>margin, padding, border</li>
+        </ul>
+        <img class="topic-img" src="https://cdn.pixabay.com/photo/2017/08/05/00/30/css-2582599_960_720.png" alt="CSS Properties">
+    </div>
+
+    <!-- Types of CSS -->
+    <div class="section">
+        <h2>Types of CSS</h2>
+        <p>CSS can be applied in three ways:</p>
+        <ul>
+            <li><b>Inline:</b> style="color:red;"</li>
+            <li><b>Embedded:</b> inside &lt;style&gt; tag</li>
+            <li><b>External:</b> separate .css file linked</li>
+        </ul>
+        <img class="topic-img" src="https://cdn.pixabay.com/photo/2018/03/01/20/31/css-3199451_960_720.png" alt="CSS Types">
+    </div>
+
+    <!-- CSS Layout -->
+    <div class="section">
+        <h2>CSS Layout</h2>
+        <p>Example: Three colored boxes side by side using flexbox.</p>
+        <div style="display:flex; justify-content:center;">
+            <div class="css-box red"></div>
+            <div class="css-box green"></div>
+            <div class="css-box yellow"></div>
+        </div>
+        <img class="topic-img" src="https://cdn.pixabay.com/photo/2016/06/14/22/10/web-design-1455016_960_720.png" alt="CSS Layout">
+    </div>
+
+    <!-- CSS Animations & Transitions -->
+    <div class="section">
+        <h2>CSS Animations & Transitions</h2>
+        <p>This box moves up and down using CSS animation:</p>
+        <div class="animate-box"></div>
+        <img class="topic-img" src="https://cdn.pixabay.com/photo/2017/01/18/12/34/animation-1988094_960_720.png" alt="CSS Animation">
+    </div>
+
+    <!-- Media-dependent Cascades -->
+    <div class="section">
+        <h2>Media-dependent Cascades</h2>
+        <p>Use media queries to make your website responsive:</p>
+        <pre>
+@media screen and (max-width: 768px) {
+    body { font-size: 14px; }
+}
+        </pre>
+        <img class="topic-img" src="https://cdn.pixabay.com/photo/2015/07/17/22/43/phone-849824_960_720.png" alt="Responsive Design">
+    </div>
+
+    <!-- Aural, Screen, Print Media Types -->
+    <div class="section">
+        <h2>Aural, Screen, and Print Media Types</h2>
+        <p>CSS can target different media types:</p>
+        <ul>
+            <li>screen — for displays</li>
+            <li>print — for printers</li>
+            <li>aural — for speech synthesizers</li>
+        </ul>
+        <img class="topic-img" src="https://cdn.pixabay.com/photo/2016/11/29/05/08/laptop-1867744_960_720.jpg" alt="Media Types">
+    </div>
+
+    <!-- Bootstrap -->
+    <div class="section">
+        <h2>CSS Frameworks: Bootstrap</h2>
+        <p>Bootstrap is a popular CSS framework for responsive designs.</p>
+        <button class="btn btn-primary">Bootstrap Button</button>
+        <img class="topic-img" src="https://cdn.pixabay.com/photo/2020/02/12/09/42/bootstrap-4844620_960_720.png" alt="Bootstrap">
+    </div>
+
+    <footer style="text-align:center; margin-top:40px;">
+        <p>&copy; 2025 Selene's CSS & HTML Showcase</p>
+    </footer>
+
+</body>
+</html>
